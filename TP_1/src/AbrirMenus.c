@@ -56,12 +56,12 @@ int informarResultados (float precio1, float precio2, float kilometros, float de
 		printf("  Aerolineas: $%.2f\n", precio1);
 		printf("  Precio con tarjeta de debito: $%.2f\n", debito1);
 		printf("  Precio con tarjeta de credito: $%.2f\n", credito1);
-		printf("  Precio pagando con bitcoin: $%.10f\n", bitcoin1);
+		printf("  Precio pagando con bitcoin: $%.5f\n", bitcoin1);
 		printf("  Precio unitario: $%.2f\n\n", unitario1);
 		printf("  LATAM: $%.2f\n", precio2);
 		printf("  Precio con tarjeta de debito: $%.2f\n", debito2);
 		printf("  Precio con tarjeta de credito: $%.2f\n", credito2);
-		printf("  Precio pagando con bitcoin: $%.10f\n", bitcoin2);
+		printf("  Precio pagando con bitcoin: $%.5f\n", bitcoin2);
 		printf("  Precio unitario: $%.2f\n\n", unitario2);
 
 		printf("La diferencia de precio es: $%.2f\n\n", resta);
@@ -94,7 +94,7 @@ int CargaForzada (float kilometros, float precio1, float precio2, char mensajeEr
 		*resultado1=precio1+*resultado1;
 		printf("  Precio con tarjeta de credito: %.2f\n", *resultado1);
 		*resultado1=dividir(precio1, 4606954.55);
-		printf("  Precio pagando con bitcoin: %.10f\n", *resultado1);
+		printf("  Precio pagando con bitcoin: %.5f\n", *resultado1);
 		*resultado1=dividir(precio1, kilometros);
 		printf("  Precio unitario: $%.2f\n\n", *resultado1);
 		printf("----------------------------------------------\n\n");
@@ -106,7 +106,7 @@ int CargaForzada (float kilometros, float precio1, float precio2, char mensajeEr
 		*resultado2=precio1+*resultado2;
 		printf("  Precio con tarjeta de credito: %.2f\n", *resultado2);
 		*resultado2=dividir(precio2, 4606954.55);
-		printf("  Precio pagando con bitcoin: %.10f\n", *resultado2);
+		printf("  Precio pagando con bitcoin: %.5f\n", *resultado2);
 		*resultado2=dividir(precio2, kilometros);
 		printf("  Precio unitario: $%.2f\n\n", *resultado2);
 

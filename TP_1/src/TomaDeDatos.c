@@ -102,3 +102,4 @@ int getInt(char mensaje[],int reintentos, int minimo, int maximo, char mensajeEr
 
 
 
+
